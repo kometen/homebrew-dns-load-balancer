@@ -19,7 +19,7 @@ class DnsLoadBalancer < Formula
   end
 
   def install
-    system "cargo", "install"
+    system "cargo", "install", ""
 
     # Create necessary directories
     (etc/"dns_load_balancer").mkpath
