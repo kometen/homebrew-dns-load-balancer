@@ -12,15 +12,11 @@ class DnsLoadBalancer < Formula
     sha256 cellar: :any_skip_relocation, x86_64_linux:  "874f5ef647d69039677d04aa1e317febee8f7c5d8b50976c39a1b7fd03973485"
   end
 
-  #depends_on "rust" => :build
-
   def plist?
     false
   end
 
   def install
-    #system "cargo", "install", *std_cargo_args
-
     # Create necessary directories
     (etc/"dns_load_balancer").mkpath
     (var/"log/dns_load_balancer").mkpath
