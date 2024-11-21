@@ -6,10 +6,11 @@ class DnsLoadBalancer < Formula
   license "MIT"
 
   bottle do
-    root_url "https://github.com/kometen/homebrew-dns-load-balancer/releases/dns-load-balancer-0.1.1"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "807337843f78dc5bf3c3635b04b701560530ef983e50acef05a746ab06eb756c"
-    sha256 cellar: :any_skip_relocation, ventura:       "585ffc9fc68ea4d60f526f9b766875ee5baa17899359a700add168c647e7e79f"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "874f5ef647d69039677d04aa1e317febee8f7c5d8b50976c39a1b7fd03973485"
+    root_url "https://github.com/kometen/homebrew-dns-load-balancer/releases/download/dns-load-balancer-0.1.1"
+    rebuild 1
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "7403a91b98740ef5f8a9fa1ae5cfd9162ce0329c54b6a84d0f794891e6bbe41c"
+    sha256 cellar: :any_skip_relocation, ventura:       "4a30cdd1981f126e17894bc5d972a3bbeae9425c7b2d1e15e48bb969c17134f7"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "f3cba1e1deefc269513123dd4ac75bb28dad302a7c5f52817ce1577f0710eb3c"
   end
 
   depends_on "rust" => :build
