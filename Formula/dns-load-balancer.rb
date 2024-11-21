@@ -5,6 +5,13 @@ class DnsLoadBalancer < Formula
   sha256 "73e5f1043ab34b6319337d0efdad4022c0879d430f9a988d4cf35fcee3bde0e8"
   license "MIT"
 
+  bottle do
+    root_url "https://github.com/kometen/homebrew-dns-load-balancer/releases/download/dns-load-balancer-0.1.1"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "807337843f78dc5bf3c3635b04b701560530ef983e50acef05a746ab06eb756c"
+    sha256 cellar: :any_skip_relocation, ventura:       "585ffc9fc68ea4d60f526f9b766875ee5baa17899359a700add168c647e7e79f"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "874f5ef647d69039677d04aa1e317febee8f7c5d8b50976c39a1b7fd03973485"
+  end
+
   depends_on "rust" => :build
 
   def plist?
