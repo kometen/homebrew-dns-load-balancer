@@ -19,7 +19,7 @@ class DnsLoadBalancer < Formula
   end
 
   def install
-    system "cargo", "install", *std_cargo_args
+    system "cargo", "install"
 
     # Create necessary directories
     (etc/"dns_load_balancer").mkpath
