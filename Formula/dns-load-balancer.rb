@@ -22,7 +22,7 @@ class DnsLoadBalancer < Formula
     (var/"log/dns_load_balancer").mkpath
 
     # Install binary
-    sbin.install "target/release/dns_load_balancer"
+    sbin.install "dns_load_balancer"
 
     # Install default config file
     (etc/"dns_load_balancer").install "config.toml"
