@@ -17,7 +17,6 @@ brew "dns-load-balancer"
 
 `brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
 
-Create a tap:
 
 Create new tap-package and a default installer-script with Rust:
 
